@@ -1,0 +1,112 @@
+:root {
+    --neon-pink: #FF006E;
+    --neon-purple: #8338EC;
+    --neon-blue: #3A86FF;
+    --powder-pink: #FFB3D9;
+    --dark-bg: #0A0A0F;
+    --mirror-black: #1A1A24;
+    --glow-pink: rgba(255, 0, 110, 0.6);
+    --glow-purple: rgba(131, 56, 236, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--dark-bg);
+    color: white;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(10,10,15,0.85);
+    backdrop-filter: blur(20px);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    background: linear-gradient(135deg,var(--neon-pink),var(--neon-purple),var(--neon-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(4rem,10vw,9rem);
+    background: linear-gradient(135deg,#fff,var(--neon-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+
+.cta-group {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.cta-btn {
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cta-primary {
+    background: linear-gradient(135deg,var(--neon-pink),var(--neon-purple));
+    color: white;
+}
+
+.cta-secondary {
+    border: 2px solid var(--neon-purple);
+    color: white;
+}
+
+.particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+}
